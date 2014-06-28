@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>AJAX example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+      //var url="https://api.meetup.com/topics?key=475523447b954445254365816766257&sign=true&search=tech&only=id,name&page=20";
+      var url="https://api.meetup.com/2/open_events?&state=NY&city=New York&country=us&category=34&page=100&time=,1w&text=javascript&key=475523447b954445254365816766257";
+      $.ajax({
+        url: url,
+        dataType: 'jsonp',
+        success: function(result){
+          console.log(result);
+          var data = result.results;
+          for (var i = 0; i < data.length; i++){
+            $('body').append(data[i].group.name+'<br>');
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <p>Test...</p>
+  </body>
+</html>

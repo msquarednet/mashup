@@ -1,8 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mashup</title>
-  </head>
-  <body>
-  </body>
+	<head>
+		<title>Mashup</title>
+		<link rel="stylesheet" href="css/mashup.css">
+	</head>
+	<body>
+
+		<h1>Meetup Mashup</h1>
+		<p>The following is a list of open "tech" Meetup events in NYC, in the (1) upcoming week, that contain the word "Javascript". </p>
+
+		<div id="googleMap" style="width:500px;height:380px; border:0;"></div>
+
+		<!--<script src="js-libs/todomvc-common/base.js"></script>-->
+		<script src="js-libs/jquery/jquery.js"></script>
+		<script src="js-libs/underscore/underscore.js"></script>
+		<script src="js-libs/backbone/backbone.js"></script>
+
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCBmpk2WnAJDi3n09o4rJSFd_Rk-owsIIQ"></script>
+		
+		<script src="js/models/meetup.js"></script>
+		<script src="js/collections/meetups.js"></script>
+		<script src="js/views/meetup-view.js"></script>
+		<script src="js/views/meetups-view.js"></script>
+		<script src="js/views/app-view.js"></script>
+
+		<script src="js/app.js"></script>
+		
+	</body>
 </html>
+
+
+
